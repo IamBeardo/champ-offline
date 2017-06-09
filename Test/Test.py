@@ -28,3 +28,6 @@ print (t)
 roster = champions.champList()
 roster.loadHookCsv("c:\champions (1).csv")
 
+#asdf
+
+
