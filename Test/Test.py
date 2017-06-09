@@ -6,10 +6,9 @@ import csv
 
 
 
-t = champions.champ.fromName("APAN")
+#t = champions.champ.fromName("APAN")
 
-print (t.Name)
-print (t)
+#print (t)
 
 
 #with open('names.csv') as csvfile:
