@@ -14,10 +14,10 @@ class champ(object):
 
     def __init__(self, Name="None", Stars=1, Rank=1,Level=1, Sig=0, Tags=None):
         self.Name   = Name
-        self.Stars  = Stars*1
+        self.Stars  = Stars
         self.Rank   = Rank
         self.Level  = Level
-        self.Sig    = Sig*1
+        self.Sig    = Sig
         self.Awakened= Sig!=0
         self.Prestige = None  # needs lookup
 
@@ -40,7 +40,7 @@ class champList(object):
 
 
     def loadHookCsv(self,f):
-        csvreader = csv.DictReader(open(f))
+        csvreader = csv.DictReader(f)
         
         for row in csvreader:
             newchamp=champ.fromHookCSV(row)
